@@ -6,8 +6,9 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid px-0">
           <div class="navbar-brand">
-            {{ .Scratch.Set "img" .Site.Params.logo }} {{ .Scratch.Set "logo_w"
-            140 }} {{- partial "_logo.html" . -}}
+            {{ .Scratch.Set "img" .Site.Params.logo }}
+             {{ .Scratch.Set "logo_w" 140 }} 
+            {{- partial "_logo.html" . -}}
           </div>
 
           <div class="d-flex order-12 order-lg-1">
@@ -27,7 +28,8 @@
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-              {{ range .Site.Menus.header }} {{ if .HasChildren }}
+              {{ range .Site.Menus.header }} 
+              {{ if .HasChildren }}
               <li class="nav-item">
                 <a
                   class="nav-link dropdown-toggle"
