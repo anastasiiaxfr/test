@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-    {{ partial "head.html" . }}
-<body>
-    <div class="content">
-        <div class="pageNotFound">
-            <h1>Page not found :(</h1>
-            <p class="pageNotFound__text">
-                You're an explorer, aren't ya?<br>
-                But the page you are attempting to access cannot be found.<br>
-                Go back to the <a href="{{ "/" | relURL }}">main page</a>
-            </p>
-        </div>
+{{ define "main" }}
+
+<section class="error-page">
+  <div class="center">
+    <div class="block text-center py-5 my-5">
+      <h1>404</h1>
+      <h3>Page Not Found</h3>
+      <p>
+        The link you clicked may be broken or the <br />page may have been
+        removed.
+      </p>
+      <div class="mt-3">
+        <a href="{{ .Site.BaseURL | relLangURL }}" class="btn btn-main"
+          >visit homepage</a
+        >
+      </div>
     </div>
-</body>
-</html>
+  </div>
+</section>
+
+{{ end }}

@@ -1,16 +1,108 @@
-baseURL = "./"
+baseURL = "/"
+canonifyURLs = true
+defaultContentLanguage = "ua"
+disableLanguages = []
+languageCode = "ua"
+paginate = "6"
 relativeURLs = true
+summaryLength = "50"
+title = "crypto - Главная"
+# [Languages.en]
+# contentDir = "content/en"
+# home = "Home"
+# languageCode = "en-us"
+# languageName = "En"
+# weight = 3
+[Languages.ru]
+contentDir = "content/ru"
+home = "Главная"
+languageCode = "ru"
+languageName = "Ру"
+weight = 2
+[Languages.ua]
+contentDir = "content/ua"
+home = "Головна"
+languageCode = "ua"
+languageName = "Укр"
+weight = 1
 
-languageCode = "en-us"
-defaultContentLanguage = "en"
-title = "CV Berest Anastasiia"
 
+[[menu.footer]]
+URL = "/support/"
+name = "Support"
+weight = 1
+[[menu.footer]]
+URL = "/premium/"
+name = "Premium"
+weight = 2
+[[menu.footer]]
+URL = "/pricing/"
+name = "Pricing"
+weight = 3
+[[menu.footer]]
+URL = "/blog/"
+name = "Blog"
+weight = 4
+
+[[menu.header]]
+URL = "/home/"
+name = "Home"
+weight = 1
+[[menu.header]]
+URL = "/features/"
+name = "Features"
+weight = 2
+[[menu.header]]
+URL = "/pricing/"
+name = "Pricing"
+weight = 3
+[[menu.header]]
+URL = "/blog/"
+name = "Blog"
+weight = 4
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 [params]
-colorDark = "#666"
-colorLight = "#fff"
-colorPageBackground = "#ddd"
-colorPrimary = "#6c95b4"
-colorPrimaryText = "#fff"
-colorRightColumnBackground = "#f5f5f5"
-colorSecondary = "#aaa"
-pages = 1
+CIO_site_id = "XXX"
+GTM = "xxx"
+
+description = ""
+develop = "xfr"
+email = ""
+home = "Home"
+
+logo = "/images/logo.png"
+logo_dark = "/images/logo.png"
+logo_w = "140"
+
+site_name = "crypto"
+site_url = "crypto.com"
+
+tm_id = "-587397444"
+tm_token = "2045157225:AAFQjtb_C69OrQqaXjNLnpODfFy01tIe1Lg"
+
+[[params.plugins.css]]
+link = "plugins/js/animate.min.css"
+[[params.plugins.js]]
+link = "plugins/js/wow.min.js"
+[[params.plugins.js]]
+link = "plugins/js/bootstrap.bundle.min.js"
+[[params.plugins.js]]
+link = "plugins/js/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/js/just-validate.min.js"
+[[params.plugins.js]]
+link = "plugins/js/smtp.js"
+[params.preloader]
+enable = true
+preloader = ""
+[sitemap]
+ChangeFreq = "daily"
+Priority = 0.6
+Weight = [["main", "1"], ["sub2", "0.8"], ["sub3", "0.6"]]
+enableRobotsTXT = true
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"

@@ -1,0 +1,27 @@
+h1
+    +fnt(80, 80*1.0, 700, $ffHeading)
+    font-size: clamp(50px, 4vw, 80px)
+    margin-bottom: 30px
+    color: $grey_heading
+    @media only screen and (max-width: $sm) 
+        +fnt(40, 40*1.15, 700, $ffHeading)
+    
+h2
+    +fnt(60, 60*1.1, 700, $ffHeading)
+    font-size: clamp(40px, 4vw, 60px)
+    color: $grey_heading
+    @media only screen and (max-width: $sm) 
+        +fnt(30, 30*1.4, 700, $ffHeading)
+h3
+    +fnt(50, 50*1.1, 700, $ffHeading)
+    font-size: clamp(30px, 4vw, 50px)
+    margin-bottom: 38px
+    color: $grey_heading
+    @media only screen and (max-width: $sm) 
+        +fnt(28, 28*1.1, 700, $ffHeading)
+.text
+    &--desc
+        +fnt(20, 20*1.4, 400, $ffText)
+        margin-bottom: 50px
+        color: $grey2
+   

@@ -1,80 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-  {{ partial "head.html" . }}
-  <body>
-    <header>
-      <nav class="menu__wrap">
-        <ul class="menu">
-          <li class="menu__item active">
-            <a href="#" class="menu__link">
-              <svg class="icon" width="20" height="20">
-                <use xlink:href="#menu"></use>
-              </svg>
-              <span> Catalog</span>
-              <div class="menu__toggle">
-                <svg class="icon" width="15" height="15">
-                  <use xlink:href="#arrow-right"></use>
-                </svg>
-              </div>
-            </a>
-  
-            {{- partial "_menu-sub" . -}}
-          </li>
-          <li class="menu__item menu__mob">
-            <nav class="menu__link">
-              <svg class="icon" width="20" height="20">
-                <use xlink:href="#menu"></use>
-              </svg>
-  
-              <span> Menu </span>
-              <div class="menu__toggle">
-                <svg class="icon" width="15" height="15">
-                  <use xlink:href="#arrow-right"></use>
-                </svg>
-              </div>
-            </nav>
-          </li>
-          <li class="menu__collapse">
-            <ul class="menu__mob-collapse">
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  Sale
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  Newest
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  Brands
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  <svg class="icon" width="15" height="15">
-                    <use xlink:href="#bookmark"></use>
-                  </svg>
-                  Store blog
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  <svg class="icon" width="15" height="15">
-                    <use xlink:href="#promo"></use>
-                  </svg>
-                  Active promo-actions
-                </a>
-              </li>
-              {{- partial "_menu-inner" . -}}
-            </ul>
-          </li>
-        </ul>
-      </nav>
-  
-    </header>
-   
-    {{- partial "_svg-sprite" . -}}
-  </body>
-</html>
+{{ define "main" }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage }}
+<style>
+</style>
+{{ end }}
+
+	
+{{ "<!-- Hero Section -->" | safeHTML }}
+{{- partial "_hero.html" . -}}
+{{ "<!-- End of Hero Section -->" | safeHTML }}
+
+{{- partial "_sec-1.html" . -}}
+{{- partial "_sec-2.html" . -}}
+
+{{"<!-- banner-feature -->" | safeHTML}}
+{{ if $data.homepage.section.enable }}
+{{ with $data.homepage }}
+
+{{ .title }}
+
+{{ end }}
+{{ end }}
+
+
+
+
+
+<!-- END section -->
+
+
+
+{{ end }}
+
