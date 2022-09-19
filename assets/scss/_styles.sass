@@ -1,0 +1,135 @@
+html, body
+	height: auto
+	background: $grad
+
+.header
+	height: 94px
+	display: flex
+	align-items: center
+	padding: 10px 50px
+	.container
+		max-width: 100%
+		width: 100%
+		
+	@media only screen and (max-width: $sm)
+		padding: 10px 12px
+		.btn
+			display: none
+
+.section
+	padding: 50px 0
+
+.plan
+	position: relative
+	align-self: stretch
+	align-items: stretch
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	width: 33%
+	padding: 0 34px
+	@media only screen and (max-width: $lg)
+		width: 50%
+		&__spacer
+			display: none
+	@media only screen and (max-width: $md)
+		width: 100%
+		margin: 20px auto
+		
+	&__feature
+		height: 180px
+		display: flex
+		td
+			padding: 8px 0
+		@media only screen and (max-width: $md)
+			height: auto
+
+	&__wrap
+		background-color: rgba($white, 0.64)
+		border-radius: 26px
+		//max-width: 937px
+		padding: 20px 45px
+		margin-top: 64px
+		display: flex
+		flex-wrap: wrap
+
+		@media only screen and (max-width: $sm)
+			padding: 0px
+			margin-top: 30px
+			
+	&__price
+		+ft(36, 46, 700, $ffHeading)
+		small
+			+ft(17, 25, 500, $ffHeading)
+			color: $gray
+
+	&__title
+		display: block
+		+ft(28, 42, 500, $ffHeading)
+		margin-top: 20px
+		margin-bottom: 10px
+
+	&__cta
+		width: 207px
+		height: 45px
+		margin-top: 25px
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		background-color: $blue
+		border: 1px solid $blue
+		color: $white
+		border-radius: 25px
+		transition: $trs
+		&:hover
+			border-color: $pink-dark
+			background-color: $pink-dark
+
+	&__desc, &__feature
+		+ft(15, 22, 500, $ffText)
+		color: $gray
+	ul
+		margin: 0
+
+	&__cat
+		display: flex
+		align-items: center
+		justify-content: center
+
+		width: 121px
+		height: 27px
+		
+		position: absolute
+		right: 20px
+		top: 20px
+
+		background: $blue2
+		color: $pink
+		border-radius: 13.5px
+		+ft(10, 15, 800, $ffHeading)
+
+	&__header
+		display: flex
+		justify-content: flex-end
+
+	&.active
+		background-color: $blue
+		color: $white
+		box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755)
+		border-radius: 26px
+		padding: 20px 30px
+		margin-top: -50px
+		padding-top: 50px
+		p, small, li, td
+			color: $white
+		.plan__cta
+			background-color: $pink
+			&:hover
+				background-color: $pink-dark
+		@media only screen and (max-width: $lg)
+			margin-top: 40px
+		@media only screen and (max-width: $md)
+			margin-top: 40px
+			margin-bottom: 0
+			padding-top: 20px

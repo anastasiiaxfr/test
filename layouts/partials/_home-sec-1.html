@@ -1,0 +1,581 @@
+{{ $data := index .Site.Data .Site.Language.Lang }} 
+{{ if $data.homepage.section_1 }} 
+{{ with $data.homepage.section_1 }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-11 mx-auto">
+            <div class="row">
+                <h1>
+                  Plans & Pricing
+                </h1>
+              </div>
+              <div class="row align-items-center justify-content-between">
+                <div class="col-md-7">
+                  <p>
+                    Whether your time-saving automation needs are large or small, we’re
+                    here to help you scale.
+                  </p>
+                </div>
+                <div class="col-md-5">
+                  <ul class="nav nav-pills mt-4 mt-lg-0 mx-auto me-lg-0 ms-lg-auto" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-home-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-home"
+                        aria-selected="true"
+                      >
+                        MONTHLY
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-profile-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-profile"
+                        aria-selected="false"
+                      >
+                        YEARLY
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                    tabindex="0"
+                  >
+                    <div class="plan__wrap">
+                      <div class="plan">
+                        <table>
+                          <tr>
+                            <td>
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <big class="plan__price"> $19<small>/month</small> </big>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="plan__title">
+                                Starter
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="plan__desc">
+                                Unleash the power of automation.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="plan__feature">
+                                <tr>
+                                  <td width="30">
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Multi-step Zaps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    3 Premium Apps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    2 Users team
+                                  </td>
+                                </tr>
+                              
+                                
+                              </table>
+                            </td>
+                          </tr>
+          
+                          <tr>
+                            <td>
+                              <button class="plan__cta">
+                                Choose plan
+                              </button>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="plan">
+                        <table>
+                          <tr>
+                            <td height="5" width="5">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <big class="plan__price"> $54<small>/month</small> </big>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="plan__title">
+                                Professional
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="plan__desc">
+                                Advanced tools to take your work to the next level.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="plan__feature">
+                                <tr>
+                                  <td width="30">
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Multi-step Zaps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Unlimited Premium Apps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    50 Users team
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Shared Workspace
+                                  </td>
+                                </tr>
+                               
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button class="plan__cta">
+                                Choose plan
+                              </button>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="plan active">
+                        <table>
+                          <tr>
+                            <td>
+                              &nbsp;
+                              <span class="plan__cat">
+                                MOST POPULAR
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <big class="plan__price"> $89<small>/month</small> </big>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="plan__title">
+                                Company
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="plan__desc">
+                                Automation plus enterprise-grade features.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="plan__feature">
+                                <tr>
+                                  <td width="30">
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check2"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Multi-step Zaps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check2"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Unlimited Premium Apps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check2"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Unlimited Users Team
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check2"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Advanced Admin
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check2"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Custom Data Retention
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button class="plan__cta">
+                                Choose plan
+                              </button>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                    tabindex="0"
+                  >
+              
+                  <div class="plan__wrap">
+                      <div class="plan">
+                        <table>
+                          <tr>
+                            <td>
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <big class="plan__price"> $12<small>/month</small> </big>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="plan__title">
+                                Starter
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="plan__desc">
+                                Unleash the power of automation.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="plan__feature">
+                                <tr>
+                                  <td width="30">
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Multi-step Zaps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    3 Premium Apps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    2 Users team
+                                  </td>
+                                </tr>
+                                
+                              </table>
+                            </td>
+                          </tr>
+          
+                          <tr>
+                            <td>
+                              <button class="plan__cta">
+                                Choose plan
+                              </button>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="plan">
+                        <table>
+                          <tr>
+                            <td height="5" width="5">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <big class="plan__price"> $36<small>/month</small> </big>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="plan__title">
+                                Professional
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="plan__desc">
+                                Advanced tools to take your work to the next level.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="plan__feature">
+                                <tr>
+                                  <td width="30">
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Multi-step Zaps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Unlimited Premium Apps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    50 Users team
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Shared Workspace
+                                  </td>
+                                </tr>
+                               
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button class="plan__cta">
+                                Choose plan
+                              </button>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="plan active">
+                        <table>
+                          <tr>
+                            <td>
+                              &nbsp;
+                              <span class="plan__cat">
+                                MOST POPULAR
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <big class="plan__price"> $56<small>/month</small> </big>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="plan__title">
+                                Company
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="plan__desc">
+                                Automation plus enterprise-grade features.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="plan__feature">
+                                <tr>
+                                  <td width="30">
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check2"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Multi-step Zaps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check2"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Unlimited Premium Apps
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check2"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Unlimited Users Team
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check2"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Advanced Admin
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <svg class="icon" width="20" height="20">
+                                      <use xlink:href="#check2"></use>
+                                    </svg>
+                                  </td>
+                                  <td>
+                                    Custom Data Retention
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button class="plan__cta">
+                                Choose plan
+                              </button>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+              </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+{{ end }} 
+{{ end }}

@@ -1,0 +1,71 @@
+baseURL = "/"
+canonifyURLs = true
+defaultContentLanguage = "ua"
+disableLanguages = []
+languageCode = "ua"
+paginate = "6"
+relativeURLs = true
+summaryLength = "50"
+title = "jadwalin - Главная"
+# [Languages.en]
+# contentDir = "content/en"
+# home = "Home"
+# languageCode = "en-us"
+# languageName = "En"
+# weight = 3
+[Languages.ru]
+contentDir = "content/ru"
+home = "Главная"
+languageCode = "ru"
+languageName = "Ру"
+weight = 2
+[Languages.ua]
+contentDir = "content/ua"
+home = "Головна"
+languageCode = "ua"
+languageName = "Укр"
+weight = 1
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+[params]
+CIO_site_id = "XXX"
+GTM = "GTM-WHBQ3BV"
+address = "ТОВ “МС ПЕЙ” \n Київ, вул. Солом'янська 3, оф. 6"
+copy = "&copy; 2021 JO1N Ltd"
+description = ""
+develop = "xfr"
+email = "jadwalin.commercial@gmail.com"
+home = "Home"
+logo = "/images/logo.svg"
+logo_dark = "/images/logo.svg"
+logo_w = "101"
+mobile = "(097) 875 12 43"
+site_name = "Jadwalin"
+site_url = "Jadwalin.com"
+tm_id = "xxx"
+tm_token = "xxx"
+# [[params.plugins.css]]
+# link = "plugins/js/animate.min.css"
+# [[params.plugins.js]]
+# link = "plugins/js/wow.min.js"
+[[params.plugins.js]]
+link = "plugins/js/bootstrap.bundle.min.js"
+[[params.plugins.js]]
+link = "plugins/js/jquery.min.js"
+# [[params.plugins.js]]
+# link = "plugins/js/just-validate.min.js"
+# [[params.plugins.js]]
+# link = "plugins/js/smtp.js"
+[params.preloader]
+enable = true
+preloader = ""
+[sitemap]
+ChangeFreq = "daily"
+Priority = 0.6
+Weight = [["main", "1"], ["sub2", "0.8"], ["sub3", "0.6"]]
+enableRobotsTXT = true
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"

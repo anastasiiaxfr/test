@@ -1,0 +1,19 @@
+<!-- BEGIN header -->
+<header class="header">
+  <div class="container">
+    <div class="row justify-content-between">
+      <button class="menu__toggle">
+        <svg class="icon" width="32" height="32">
+          <use xlink:href="#menu"></use>
+        </svg>
+      </button>
+      {{ .Scratch.Set "img" .Site.Params.logo }} {{ .Scratch.Set "logo_w" 137 }}
+      {{ .Scratch.Set "logo_h" 30 }} {{- partial "_logo.html" . -}}
+
+      <a href="#" class="btn btn--bg">
+        Join Now
+      </a>
+    </div>
+  </div>
+</header>
+<!-- END header -->
